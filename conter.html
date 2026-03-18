@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Hub | Gaming & Anime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>NEXUS<span>HUB</span></h1>
+            <nav class="filter-controls">
+                <button onclick="loadNews('all')">All Feed</button>
+                <button onclick="loadNews('gaming')">Gaming</button>
+                <button onclick="loadNews('anime')">Anime</button>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="newsSearch" placeholder="Search titles..." onkeyup="filterBySearch()">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="news-feed" class="news-grid">
+            <div id="loader" class="loader-container">
+                <div class="spinner"></div>
+                <p>Fetching latest updates...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Hub | Built for GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
